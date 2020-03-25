@@ -17,8 +17,7 @@ set PATH $PATH ~/Scripts
 set EDITOR /usr/bin/nvim
 set BROWSER /usr/bin/google-chrome-stable
 
-function fish_greeting
-end
+set -U fish_greeting
 
 alias pyenv-init 'status --is-interactive; and source (pyenv init -|psub)'
 alias ra 'ranger'
