@@ -23,7 +23,8 @@ set -g fish_color_quote          $yellow
 set -g fish_color_redirection    $foreground
 set -g fish_color_search_match   --background=$selection
 set -g fish_color_selection      --background=$selection
-if test "$TERM" = 'linux'
+
+if test "$TERM" = 'linux' 
 	echo -en "\e]P0282a36" #black
 	echo -en "\e]P844475a" #darkgrey
 	echo -en "\e]P1D75F5F" #darkred
