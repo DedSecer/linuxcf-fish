@@ -15,6 +15,7 @@
 
 set PATH $PATH ~/Scripts
 set EDITOR /usr/bin/nvim
+set VISUAL /usr/bin/nvim
 set BROWSER /usr/bin/google-chrome-stable
 
 set -U fish_greeting
