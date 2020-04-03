@@ -13,10 +13,10 @@
 #   ...
 # end
 
-set PATH $PATH ~/Scripts
-set EDITOR /usr/bin/nvim
-set VISUAL /usr/bin/nvim
-set BROWSER /usr/bin/google-chrome-stable
+set -x PATH $PATH ~/Scripts
+set -x EDITOR /usr/bin/nvim
+set -x VISUAL /usr/bin/nvim
+set -x BROWSER /usr/bin/google-chrome-stable
 
 set -U fish_greeting
 
