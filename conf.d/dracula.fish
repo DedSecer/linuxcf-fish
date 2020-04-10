@@ -41,5 +41,4 @@ if test "$TERM" = 'linux'
 	echo -en "\e]PE8be9fd" #cyan
 	echo -en "\e]P7E5E5E5" #lightgrey
 	echo -en "\e]PFF8F8F2" #white
-	clear #for background artifacting
 end

@@ -65,10 +65,9 @@ function fish_prompt
     if test $__last_command_exit_status != 0
         set arrow_color "$red"
     end
-
-    set -l arrow "$arrow_color=>"
+    set -l arrow "$arrow_color>"
     if test "$USER" = 'root'
-        set arrow "$arrow_color# "
+        set arrow "$arrow_color># "
     end
 
     set -l cwd $cyan(basename (prompt_pwd))

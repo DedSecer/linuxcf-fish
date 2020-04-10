@@ -13,6 +13,11 @@
 #   ...
 # end
 
+set -xU fish_cursor_insert line
+set -xU fish_cursor_default block
+set -xU fish_cursor_replace_one underscore
+set -xU fish_cursor_visual block
+
 set -x PATH $PATH ~/Scripts
 set -x EDITOR /usr/bin/nvim
 set -x VISUAL /usr/bin/nvim
