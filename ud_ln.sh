@@ -6,7 +6,7 @@ fish_path=~/.config/fish
 ln_cmd='ln -i'
 func_path=functions
 
-#git pull
+git pull
 
 mkdir -p $fish_path
 
