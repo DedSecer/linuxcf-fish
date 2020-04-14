@@ -4,19 +4,22 @@
 
 fish_path=~/.config/fish
 ln_cmd='ln -i'
-func_path=functions
+
+function lnr() {
+	#a function to make hardlinked_subtree
+	#${1}:from path , ${2}:to path , ${3}:ln_cmd
+
+	if test -d ${1}; then
+		for file in `ls ${1}` ; do
+			mkdir -p ${2}
+			lnr ${1}/${file} ${2}/${file} "${3}"
+			done	
+	
+	elif test -f ${1}; then
+		 ${3} ${1} ${2}
+	fi		
+}
 
 git pull
 
-mkdir -p $fish_path
-
-${ln_cmd} ./config.fish $fish_path/
-
-mkdir -p $fish_path/conf.d
-${ln_cmd} ./conf.d/dracula.fish $fish_path/conf.d/
-
-mkdir -p $fish_path/functions/
-for file in `ls ./${func_path}`  
-do
-	${ln_cmd} "./${func_path}/${file}"  "${fish_path}/${func_path}/"
-done	
+lnr . ${fish_path} "${ln_cmd}"
