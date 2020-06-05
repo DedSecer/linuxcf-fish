@@ -18,10 +18,11 @@ set -xU fish_cursor_default block
 set -xU fish_cursor_replace_one underscore
 set -xU fish_cursor_visual block
 
+set -x PAGER "nvim -u $HOME/.config/nvim/scripts/less.vim -c 'set ft=man'"
 set -x PATH $PATH ~/Scripts
 set -x EDITOR /usr/bin/nvim
 set -x VISUAL /usr/bin/nvim
-set -x BROWSER /usr/bin/google-chrome-stable
+set -x BROWSER /usr/bin/qutebrowser
 
 set -U fish_greeting
 
