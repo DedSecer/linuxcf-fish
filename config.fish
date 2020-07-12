@@ -31,6 +31,7 @@ alias ra 'ranger'
 alias vim 'nvim'
 alias sudo 'sudo -s' 
 alias lg 'lazygit'
+alias vless "nvim -u ~/.config/nvim/scripts/less.vim"
 
 set -xU LESS_TERMCAP_md (printf "\e[01;31m")
 set -xU LESS_TERMCAP_me (printf "\e[0m")
