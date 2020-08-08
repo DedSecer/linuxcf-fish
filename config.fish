@@ -19,7 +19,7 @@ set -xU fish_cursor_replace_one underscore
 set -xU fish_cursor_visual block
 
 set -x PAGER "nvim -u ~/.config/nvim/scripts/less.vim"
-set -x PATH $PATH ~/Scripts
+set -x PATH $PATH ~/Scripts ~/.local/bin
 set -x EDITOR /usr/bin/nvim
 set -x VISUAL /usr/bin/nvim
 set -x BROWSER /usr/bin/qutebrowser
