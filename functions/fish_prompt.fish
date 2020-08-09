@@ -84,4 +84,8 @@ function fish_prompt
     end
 
     echo -n -s $arrow ' '$cwd $repo_info $normal ' '
+
+	if set -q VIRTUAL_ENV
+    echo -n -s (set_color blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+end
 end
