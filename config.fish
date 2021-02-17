@@ -28,7 +28,6 @@ set -U fish_greeting
 
 alias pyenv-init 'status --is-interactive; and source (pyenv init -|psub)'
 alias ra 'ranger'
-alias vim 'nvim'
 alias sudo 'sudo -s' 
 alias lg 'lazygit'
 alias vless "nvim -u ~/.config/nvim/scripts/less.vim"
