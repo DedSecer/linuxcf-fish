@@ -26,11 +26,14 @@ set -x BROWSER /usr/bin/qutebrowser
 
 set -U fish_greeting
 
-alias pyenv-init 'status --is-interactive; and source (pyenv init -|psub)'
-alias ra 'ranger'
-alias sudo 'sudo -s' 
-alias lg 'lazygit'
+alias pyenv-init "status --is-interactive; and source (pyenv init -|psub)"
+alias ra "ranger"
+alias sudo "sudo -s"
+alias lg "lazygit"
 alias vless "nvim -u ~/.config/nvim/scripts/less.vim"
+
+alias sshagent_start "eval (ssh_agent_start)"
+alias sshagent_stop "eval (ssh_agent_kill)"
 
 set -xU LESS_TERMCAP_md (printf "\e[01;31m")
 set -xU LESS_TERMCAP_me (printf "\e[0m")
