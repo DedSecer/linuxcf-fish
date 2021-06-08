@@ -13,31 +13,32 @@
 #   ...
 # end
 
-set -xU fish_cursor_insert line
-set -xU fish_cursor_default block
-set -xU fish_cursor_replace_one underscore
-set -xU fish_cursor_visual block
+set -x fish_cursor_insert line
+set -x fish_cursor_default block
+set -x fish_cursor_replace_one underscore
+set -x fish_cursor_visual block
 
 set -x PAGER "nvim -u ~/.config/nvim/scripts/less.vim"
-set -x PATH $PATH ~/Scripts ~/.local/bin
+set -x PATH $PATH ~/.local/bin
 set -x EDITOR /usr/bin/nvim
 set -x VISUAL /usr/bin/nvim
 set -x BROWSER /usr/bin/qutebrowser
 
-set -U fish_greeting
+set  fish_greeting
 
 alias pyenv-init "status --is-interactive; and source (pyenv init -|psub)"
 alias ra "ranger"
 alias sudo "sudo -s"
 alias lg "lazygit"
+alias plasma-start "startx /usr/bin/startplasma-x11"
 alias vless "nvim -u ~/.config/nvim/scripts/less.vim"
 
 alias sshagent_start "eval (ssh_agent_start)"
 alias sshagent_stop "eval (ssh_agent_kill)"
 
-set -xU LESS_TERMCAP_md (printf "\e[01;31m")
-set -xU LESS_TERMCAP_me (printf "\e[0m")
-set -xU LESS_TERMCAP_se (printf "\e[0m")
-set -xU LESS_TERMCAP_so (printf "\e[01;44;33m")
-set -xU LESS_TERMCAP_ue (printf "\e[0m")
-set -xU LESS_TERMCAP_us (printf "\e[01;32m")
+set -x LESS_TERMCAP_md (printf "\e[01;31m")
+set -x LESS_TERMCAP_me (printf "\e[0m")
+set -x LESS_TERMCAP_se (printf "\e[0m")
+set -x LESS_TERMCAP_so (printf "\e[01;44;33m")
+set -x LESS_TERMCAP_ue (printf "\e[0m")
+set -x LESS_TERMCAP_us (printf "\e[01;32m")
